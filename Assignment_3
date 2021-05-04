@@ -1,0 +1,97 @@
+1. Why are functions advantageous to have in your programs?
+
+Ans:
+Functions help us to reuse the code. we can not have to write same code again and again. we can write same code once and call it again and again. and helps to devide large program into smaller group.
+
+
+
+2. When does the code in a function run: when it's specified or when it's called?
+Ans:
+A function only runs when it's called.
+
+
+
+3. What statement creates a function?
+Ans:
+We can start function using "def" keyword, and then "function name" and "():" this sign
+
+
+
+4. What is the difference between a function and a function call?
+Ans:
+Function is a piece of code with def statement that helping us to do any task at any point of the program. and when we create the function we have to use function call to achive that task we created.
+eg:
+def sum_1(x,y):
+    return x+y
+sum_1(2,3)
+
+
+
+5. How many global scopes are there in a Python program? How many local scopes?
+Ans:
+There is one global and when function is called local scope created. basically four
+
+
+
+6. What happens to variables in a local scope when the function call returns?
+Ans:
+when we print outside the function its call global variable 1st and when we return the function its check local variable anf then global. and then local scope destroy. 
+
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+Ans:
+return value is in the inside of the function used to end the execution of the function. possible to return value in an expression and  If the return statement is without any expression, then None is returned.
+
+
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+Ans:
+in this case we have to use function name with()
+eg:
+def par_1():
+    print("this is 1st paragraph")
+par_1()
+
+-and wnen function does not have return statement, "None" is the return value
+
+
+
+
+9. How do you make a function variable refer to the global variable?
+Ans:
+
+With the Global statement.
+
+
+10. What is the data type of None?
+Ans:
+The data type of None is "NoneType" , its define null value
+we can chaek using below code
+a = None 
+print(a)
+
+type(a)
+
+
+
+11. What does the sentence import areallyourpetsnamederic do?
+Ans:
+this will import module named areallyourpetsnamederic.
+
+
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+Ans:
+spam.bacon()
+
+
+
+13. What can you do to save a programme from crashing if it encounters an error?
+Ans:
+we can use exception handling method to prevent the errors. critical code use under "try" clause. and for extra we can use logging.
+
+
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+Ans:
+"try" tests a code for errors and "except" handel the errors, critical operations writtern under "try"
