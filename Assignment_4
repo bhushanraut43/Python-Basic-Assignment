@@ -1,0 +1,131 @@
+1. What exactly is []?
+Ans:
+This is the empty list.
+
+
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+Ans:
+spam="hello"
+spam[2]
+
+
+
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+Ans:
+"d" is the value
+because '3'*2 = 33 #string*2
+         33/11 = 3
+         and 3rd value is 'd' when started count with 0
+
+
+
+4. What is the value of spam[-1]?
+Ans:
+"d" is the value 
+reverse count of the string started with -1
+
+
+
+5. What is the value of spam[:2]?
+Ans:
+['a', 'b'] is the value
+
+
+
+Let's pretend bacon has the list [3.14, 'cat,' 11, 'cat,' True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+Ans:
+The index of cat is 1
+
+
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+Ans:
+[3.14, 'cat', 11, 'cat', True, 99]
+
+
+
+8. How does bacon.remove('cat') change the look of the list in bacon?
+Ans:
+[3.14, 11, 'cat', True]
+there are two 'cat' .remove removes only 1st 'cat'
+
+
+9. What are the list concatenation and list replication operators?
+Ans:
+concatenation is done with + operator and its done with the same data type only.
+replication is done with * operator. this will make multiple copies of object and combine
+
+
+
+10. What is difference between the list methods append() and insert()?
+Ans:
+Append() add the element in last only and insert() can able to add anywhere in the list. 
+for eg.
+
+language = ["english", "hindi", "marathi"]
+language.append("sanskrit")
+output - ['english', 'hindi', 'marathi', 'sanskrit']
+
+language = ["english", "hindi", "marathi"]
+language.insert(1 , "sanskrit")
+output - ['english', 'sanskrit', 'hindi', 'marathi']
+
+
+
+11. What are the two methods for removing items from a list?
+Ans:
+1) remove() is the first method
+eg. language = ["english", "hindi", "marathi"]
+    language.remove("hindi")
+    output - ['english', 'marathi'] 
+    
+2) del is the second method
+eg. language = ["english", "hindi", "marathi"]
+    del language[1]
+    output - ['english', 'marathi']
+    
+    
+    
+12. Describe how list values and string values are identical.
+Ans:
+The various method use in list and string are same like slicing the string and slicing the lise both are done in same manner.  and measuring the number object are done by len() in both list and string. we can also use for loop and get the output same in list and string.
+
+
+
+13. What's the difference between tuples and lists?
+Ans:
+in the tuples we use () and they are 'immutable' we cant change value, we cant add or remove any value.
+in lise we use [] liset ate mutable, we can change anything or add or remove easily.
+
+
+
+14. How do you type a tuple value that only contains the integer 42?
+Ans:
+(42,)
+
+
+
+15. How do you get a list value's tuple form? How do you get a tuple value's list form?
+Ans:
+if,
+list = [1,2,3,4,5]
+tuple(list)
+
+tuple_1 = (9,8,7,6,5)
+list(tuple_1)
+
+
+
+16. Variables that "contain" list values are not necessarily lists themselves. Instead, what do they contain?
+Ans:
+the refrence to the list value
+
+
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+Ans:
+copy.copy() is the shallow copy of given list
+copy.deepcopy is the deep copy of the list and it is recursively process.
